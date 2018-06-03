@@ -8,7 +8,324 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/pages.css">
 </head>
-<body>
-    <h1>Digital Styleguide</h1>
+<style>
+        body {
+        background-color: #fffbdb;
+        background-image: url('images/Pattern.png');
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        background-position:  right; 
+        background-size: 300px 300px;
+    }
+    
+    
+    
+    header {
+        font-family: 'Karla';font-size: 22px;
+        padding: 1em;
+        clear: left;
+        text-align: center;
+    }
+    
+    nav {
+        font-family: 'Karla';font-size: 15px; font-weight: bold;color: #7d8de3; 
+        margin: 0;
+        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #7d8de3;
+        display: inline;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color: #7d8de3;
+    }
+    
+    article {
+        font-family: 'Karla';font-size: 14px; font-weight: lighter;
+        width: 900px;
+        margin-left: 170px;
+        padding: 1em;
+        overflow: hidden;
+    }
+
+    div.logo{
+        display: flex;
+        justify-content: space-between; 
+        max-width: 900px;
+        align-items: flex-end;  
+    }
+    div.kleur{
+        display: flex;
+        justify-content: space-between; 
+        max-width: 900px;
+        align-items: flex-end; 
+    }
+    div.kleurapart{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    p.header{ 
+        font-size: 35pt;
+        font-weight: bold;
+
+    }
+    p.subheader{
+        font-size: 25pt;
+    }
+    p.link{
+        color: #7d8de3;
+        text-decoration: underline;
+    }
+    div.teskt {
+        line-height: 15pt;
+    }
+
+    div.buttons{
+        display: flex;
+        justify-content: space-between; 
+        max-width: 900px;
+        align-items: flex-start;  
+    }
+    div.icons{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between; 
+        max-width: 900px;
+        align-items: flex-start; 
+    }
+    div.forms{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between; 
+        max-width: 900px;
+        align-items: flex-start; 
+    }
+    div.formsuitgebreid{
+        flex-direction: row;
+        justify-content: space-between; 
+        max-width: 900px;
+        align-items: flex-start; 
+    }
+    </style>
+    </head>
+    <body>
+       
+
+    
+    <header>
+       <img src="images/Big_Steez_Logo.png" alt="Big Steez" />
+    </header>
+      
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="intro.html">Introductie</a></li>
+            <li><a href="scenarios.html">Scenario's</a></li>
+            <li><a href="concurrentie.html">Concurrentie analyse</a></li>
+            <li><a href="styleguide.html">Digital styleguide</a></li>
+          </ul>
+    </nav>
+
+    <h2>LOGO</h2>
+
+    <div class="logo">  
+        <div>
+        <img src="images/Big_Steez_Logo.png" alt="Big Steez logo">
+        <p>176mm x 50mm</p>
+        </div>
+        <div>
+            <img src="images/Logox2.png" alt="Big Steez logo">
+            <p>88mm x 25mm</p>
+        </div>
+    </div>
+    <h2>KLEUREN</h2>
+    <div class="kleur">
+    <div class="kleurapart">
+        <img src="images/swatches/kleur1.png" alt="kleur1">
+        <p>     R=143 <br>
+                G=145 <br>
+                B=190   <br>
+                hsl(231, 65%, 69%) <br>
+                #7d8de3</p>
+    </div>
+    <div class="kleurapart">
+            <img src="images/swatches/kleur2.png" alt="kleur2">
+            <p>     R=104 <br>
+                    G=140 <br>
+                    B=200 <br>
+                    hsl(218, 100%, 68%) <br>
+                    #5c99ff</p>
+        </div>
+    <div class="kleurapart">
+        <img src="images/swatches/kleur3.png" alt="kleur3">
+        <p>    R=242 <br>
+                G=145 <br>
+                B=103 <br>
+                hsl(7, 100%, 70%) <br>
+                #ff7866</p>
+    </div>
+    <div class="kleurapart">
+            <img src="images/swatches/kleur4.png" alt="kleur4">
+            <p>  R=104 <br>
+                    G=140 <br>
+                    B=200 <br>
+                    hsl(271, 100%, 73%) <br>
+                    #bd75ff</p>
+        </div>
+        <div class="kleurapart">
+                <img src="images/swatches/kleur5.png" alt="kleur5">
+                <p>  R=196 <br>
+                        G=219 <br>
+                        B=155 <br>
+                        hsl(96, 100%, 75%) <br>
+                        #b3ff80</p>
+            </div> 
+            <div class="kleurapart">
+                    <img src="images/swatches/kleur6.png" alt="kleur6">
+                    <p>  R=255 <br>
+                            G=228 <br>
+                            B=139 <br>
+                            hsl(49, 100%, 72%) <br>
+                            #ffe673</p>
+                </div>           
+    </div>
+    <h2>NAVIGATION</h2>
+    <div>
+        <img src="images/navigation.png" alt="navigation">
+    </div>
+    <h2>TEKST</h2>
+<div class="teskt">
+    <div>
+    <p class="header"> This is an Example of a Header </p>
+    <p>Font: Karla Bold 35pt</p>
+</div>
+
+<div>
+    <p class="subheader">This is an Example of a Subheader</p>
+    <p>Font: Karla Regular 25pt</p>
+</div>
+
+<div>
+    <p>Lorem ipsum aut voluptate peruntis sima et atia sed ut adignat iatiis sus quibus doloreicid moloribusam enihit omnim et aliqui cus, testrum restrunt quat.
+            Rat quid moluptatum quibeatiati rerovite ventibus se est, culpario moluptatus modiam eum re nullamu stiumque doluptium vendeli gentota.</p>
+    <p>Font: Karla Regular 15pt</p>
+</div>
+
+<div>
+    <p class="link">Tis is an Example of Text link</p>
+    <p>Font: Karla Regular 15pt, #7d8de3</p>
+</div>
+</div>
+<h2>BUTTONS</h2>
+
+<div class="buttons">  
+    
+    <img src="images/buttons/button artist.png" alt="artist">
+    <img src="images/buttons/button ticket.png" alt="ticket">
+
+    <div>
+    <img src="images/buttons/button day.png" alt="day">
+    <p>Not klicked</p>
+    </div>  
+
+    <div>
+    <img src="images/buttons/button day1.png" alt="day1">
+    <p>Klicked</p>
+    </div>
+    <div>
+    <img src="images/buttons/button submit.png" alt="submit">
+    <p>Not klicked</p>
+</div>
+<div>
+    <img src="images/buttons/button submit1.png" alt="submit1">
+    <p>Klicked</p>
+</div>
+</div>
+<h2>ICONS</h2>
+<div class="icons">   
+        <img src="images/icons/icon facebook.png" alt="facebook">
+        <img src="images/icons/icon twitter.png" alt="twitter">
+        <img src="images/icons/icon instagram.png" alt="instagram">
+        <img src="images/icons/icon youtube.png" alt="youtube">
+        <img src="images/icons/icon lofi.png" alt="lofi stage">
+        <img src="images/icons/icon hiphop.png" alt="hiphop stage">
+        <img src="images/icons/icon bass.png" alt="bass stage">
+        <img src="images/icons/icon card.png" alt="card">
+        <img src="images/icons/icon cardful.png" alt="cardful">
+        <img src="images/icons/icon search.png" alt="search">
+        <img src="images/icons/icon calendar.png" alt="calendar">
+        <img src="images/icons/icon mark.png" alt="mark">
+        <img src="images/icons/icon connect.png" alt="connect">
+        <img src="images/icons/icon disability.png" alt="disability">
+        <img src="images/icons/icon safety.png" alt="safety">
+        <img src="images/icons/clothes icon.png" alt="clothes">
+        <img src="images/icons/accessories icon.png" alt="accessories">
+        
+</div>
+<h2>SPONSORS</h2>
+<div class="buttons">   
+        <img src="images/sponsors/mcdonalts.png" alt="mcdonalts">
+        <img src="images/sponsors/jupiler.png" alt="jupiler">
+        <img src="images/sponsors/cocacola.png" alt="cocacola">
+        <img src="images/sponsors/pizzahut.png" alt="pizzahut">
+        <img src="images/sponsors/studiobrussel.png" alt="studiobrussel">
+        
+</div>
+<h2>PAYMENT OPTIONS</h2>
+<div class="buttons">   
+        <img src="images/payment/paypall.png" alt="paypall">
+        <img src="images/payment/visa.png" alt="visa">
+        <img src="images/payment/mastercard.png" alt="mastercard">
+        <img src="images/payment/worldpay.png" alt="worldpay">
+</div>
+<h2>FORMS</h2>
+<div class="forms">   
+    <h3>NEWSLETTER</h3>
+        <img src="images/formules/newsletter.png" alt="newsletter">
+        <h3>PAYMENT OPTION</h3>
+    <div class="formsuitgebreid">
+        <img src="images/formules/payment.png" alt="payment">
+        
+        <img src="images/formules/payment selection.png" alt="payment selection">
+    </div>
+    <p>Bij het selecteren van een betaalmethode zal deze selectie zo weergegeven worden.</p>
+    <h3>INFORMATION</h3>
+    <div class="formsuitgebreid">
+        <img src="images/formules/information.png" alt="information">
+        
+        <img src="images/formules/travel option.png" alt="travel option">
+        <img src="images/formules/travel option change.png" alt="travel option">
+    
+    </div>
+    <p>Selecteren van vervoersoptie zal op deze manier  gebeuren.</p>
+    <h3>POLL</h3>
+    <div class="formsuitgebreid">
+        <img src="images/formules/poll.png" alt="poll">
+        <img src="images/formules/poll select.png" alt="poll select">
+    </div>
+    <p>Selecteren van artiest zal op deze manier 
+            gebeuren.</p>
+    <h3>CHAT</h3>
+        <img src="images/formules/chat.png" alt="chat">
+
+</div>
 </body>
 </html>
